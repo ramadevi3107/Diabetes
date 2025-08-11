@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .result-box {
+            background-color: white;
+            padding: 30px;
+            margin: auto;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d3557;
+        }
+        .back-btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #457b9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .back-btn:hover {
+            background-color: #1d3557;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>🩺 Diabetes Prediction Result</h2>
+        <p class="result">{{ result }}</p>
+        <a href="{% url 'home' %}" class="back-btn">🔙 Back to Form</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h2>Diabetes Prediction Form</h2>
+    {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+    <form method="post">
+        {% csrf_token %}
+        Pregnancies: <input type="number" step="any" name="Pregnancies"><br><br>
+        Glucose: <input type="number" step="any" name="Glucose"><br><br>
+        Blood Pressure: <input type="number" step="any" name="BloodPressure"><br><br>
+        Skin Thickness: <input type="number" step="any" name="SkinThickness"><br><br>
+        Insulin: <input type="number" step="any" name="Insulin"><br><br>
+        BMI: <input type="number" step="any" name="BMI"><br><br>
+        Diabetes Pedigree Function: <input type="number" step="any" name="DiabetesPedigreeFunction"><br><br>
+        Age: <input type="number" step="any" name="Age"><br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
